@@ -344,3 +344,77 @@ a {
   padding: 18px 24px;
   margin: 0 auto;
 }
+
+.offer {
+  display: flex;
+  justify-content: center;
+  margin-top: 113px;
+}
+
+.sale_img {
+  height: 529px;
+  width: 767px;
+  background-image: url('img/offer_1.png'), url('img/offer_3.png');
+}
+
+.offer_text {
+  font-size: 54px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 146px;
+  margin-left: 39px;
+}
+
+.red {
+  color: #f16d7f;
+}
+
+.offer_text_small {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.advantage {
+  height: 529px;
+  width: 373px;
+  background-color: #222224;
+  position: relative;
+}
+
+.delivery_img {
+  position: absolute;
+  top: 48px;
+  left: 36px;
+}
+
+.sales_discount_img {
+  position: absolute;
+  top: 204px;
+  left: 36px;
+}
+
+.quality_img {
+  position: absolute;
+  top: 358px;
+  left: 32px;
+}
+
+.content_advantage {
+  font-size: 14px;
+  font-weight: 300;
+  width: 236px;
+  height: 100px;
+  margin-top: 55px;
+  margin-left: 111px;
+  color: #fbfbfb;
+  letter-spacing: 0.03em;
+}
+
+.big_text_advantage {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+
