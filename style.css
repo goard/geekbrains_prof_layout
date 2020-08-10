@@ -631,7 +631,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: 148px;
-  background-color:  #f8f3f4;;
+  background-color:  #f8f3f4;
+  margin-bottom: 59px;
 }
 
 .right_breadcrumbs {
@@ -653,4 +654,130 @@ ul {
 .end_page {
   font-weight: bold;
   color: #f16d7f;
+}
+
+.catalog_man {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right_catalog_man {
+  width: 243px;
+  margin-right: 49px;
+}
+
+.detail_right_catalog_man {
+  margin-bottom: 18px;
+  width: 243px;
+}
+
+.head_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 37px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6f6e6e;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+  padding-left: 11px;
+}
+
+.head_details::-webkit-details-marker {
+  display: none;
+}
+
+.head_details::after {
+  content: "\25B2";
+  font-size: 10px;
+}
+
+.detail_right_catalog_man[open] > .head_details::after {
+  content: '\25BC';
+  color: #ef5b70;
+  font-size: 10px;
+}
+
+.detail_right_catalog_man[open] > .head_details{
+  color: #ef5b70;
+}
+
+.ul_list_filter {
+  margin: 14px 0;
+}
+
+.list_filter {
+  font-size: 14px;
+  color: #6f6e6e;
+  line-height: 33px;
+  padding-left: 17px;
+}
+
+.list_filter:hover {
+  color: #ef5b70;
+  text-decoration: underline;
+}
+
+.left_catalog_man {
+
+}
+
+.header_filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+
+.heads_header_filter {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6f6e6e;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.btn-trend {
+  border: none;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #6f6e6e;
+  line-height: 14px;
+  padding: 0 10px;
+  border-left: 1px solid #dfdfdf;
+}
+.none_border_left {
+  border-left: none;
+  padding: 0 10px 0 0;
+}
+
+.btn-trend:hover {
+  color: #000000;
+}
+
+.size {
+  width: 236px;
+}
+
+.input_size {
+  margin-right: 9px;
+}
+
+.label_size {
+  font-size: 14px;
+  color: #6f6e6e;
+  text-transform: uppercase;
+  margin-right: 23px;
+}
+
+.sort_catalog_man {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  background-color: #f3f3f3;
+  margin-bottom: 48px;
 }
