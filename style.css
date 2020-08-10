@@ -134,6 +134,7 @@ ul {
 .menu {
   display: flex;
   justify-content: center;
+
 }
 
 .menu_link {
@@ -144,6 +145,11 @@ ul {
   color: rgba(34, 34, 34, 1);
   line-height: 26px;
   text-transform: uppercase;
+  border-bottom: 3px solid #ffffff;
+}
+
+.menu_link:hover {
+  border-bottom: 3px solid #ef5b70;
 }
 
 .promo {
@@ -773,6 +779,14 @@ ul {
   margin-right: 23px;
 }
 
+.sort_view_price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #6f6e6e;
+  line-height: 26px;
+}
+
 .sort_catalog_man {
   display: flex;
   justify-content: flex-start;
@@ -780,4 +794,32 @@ ul {
   height: 50px;
   background-color: #f3f3f3;
   margin-bottom: 48px;
+}
+
+.form_sort {
+  display: flex;
+}
+
+.input_sort {
+  height: 30px;
+  width: auto;
+  font-size: 14px;
+  color: #6f6e6e;
+  line-height: 26px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-right: none;
+  padding: 0px 13px;
+  margin-left: 10px;
+}
+
+.select_sort{
+  height: 30px;
+  width: auto;
+  font-size: 14px;
+  color: #6f6e6e;
+  line-height: 26px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  padding: 0px 13px;
 }
