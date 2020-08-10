@@ -62,6 +62,9 @@ ul {
 }
 
 .header_browse {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   height: 38px;
   width: 87px;
   border: 1px solid #e6e6e6;
@@ -107,6 +110,8 @@ ul {
 }
 
 .button {
+  display: flex;
+  border-radius: 3px;
   background-color: #f16d7f;
   font-size: 15px;
   color: #ffffff;
@@ -118,7 +123,8 @@ ul {
 }
 
 .arrow {
-  line-height: 10px;
+  margin-left: 8px;
+  font-size: 10px;
 }
 
 .nav {
@@ -568,6 +574,11 @@ ul {
   color: #898989;
 }
 
+.link_text_footer:hover {
+ color: #f16d7f;
+ text-decoration: underline;
+}
+
 .footer-2 {
   display: flex;
   justify-content: space-between;
@@ -611,4 +622,35 @@ ul {
 .link_social_li_facebook {
    background:  url('img/icon_facebook.png');
    background-repeat: no-repeat;
+}
+
+/*Стили для страницы man_catalog*/
+
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+  background-color:  #f8f3f4;;
+}
+
+.right_breadcrumbs {
+  font-size: 24px;
+  font-weight: 900;
+  color: #f16d7f;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.left_breadcrumbs {
+  font-size: 14px;
+  font-weight: 300;
+  color: #636363;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.end_page {
+  font-weight: bold;
+  color: #f16d7f;
 }
