@@ -38,7 +38,11 @@
 
   <section class="breadcrumbs center">
     <div class="right_breadcrumbs">New arrivals</div>
-    <div class="left_breadcrumbs">Home / men / <span class="end_page">new arrivals</span></div>
+    <nav class="left_breadcrumbs">
+      <a class="breadcrumb_link" href="index.html">Home</a>
+      <a class="breadcrumb_link" href="man_catalog.html">men</a>
+      <a class="breadcrumb_link" href="#">new arrivals</a>
+    </nav>
   </section>
 
   <section class="catalog_man center">
@@ -94,21 +98,33 @@
         <div class="size">
           <h4 class="heads_header_filter">Size </h4>
           <form class="size_filter">
-            <label class="label_size" for="XXS"><input class="input_size" type="checkbox" name="XXS" id="XXS">XXS</label>
+            <div class="form_group">
+              <label class="label_size" for="XXS"><input class="input_size" type="checkbox" name="XXS" id="XXS">XXS</label>
+            </div>
+            <div class="form_group">
             <label class="label_size" for="XS"><input class="input_size" type="checkbox" name="XS" id="XS">XS</label>
+            </div>
+            <div class="form_group">
             <label class="label_size" for="S"><input class="input_size" type="checkbox" name="S" id="S">S</label>
-            <label class="label_size" for="M"><input class="input_size" type="checkbox" name="M" id="M">M</label>
-            <input class="input_size" type="checkbox" name="L" id="L"><label class="label_size" for="L">L</label>
-            <input class="input_size" type="checkbox" name="XL" id="XL">
-            <label class="label_size" for="XL">XL</label>
-            <input class="input_size" type="checkbox" name="XXL" id="XXL">
-            <label class="label_size" for="XXL">XXL</label>
+            </div>
+            <div class="form_group">
+              <label class="label_size" for="M"><input class="input_size" type="checkbox" name="M" id="M">M</label>
+            </div>
+            <div class="form_group">
+              <label class="label_size" for="L"><input class="input_size" type="checkbox" name="L" id="L">L</label>
+            </div>
+            <div class="form_group">
+              <label class="label_size" for="XL"><input class="input_size" type="checkbox" name="XL" id="XL">XL</label>
+            </div>
+            <div class="form_group">
+              <label class="label_size" for="XXL"><input class="input_size" type="checkbox" name="XXL" id="XXL">XXL</label>
+            </div>
           </form>
         </div>
         <div class="price">
           <h4 class="heads_header_filter">PRICE</h4>
           <form action="#">
-            <input type="range" name="" id="">
+            <input class="price" type="range" name="" id="">
             <div class="sort_view_price">
               <div>$52</div>
               <div>$400</div>
@@ -215,15 +231,40 @@
         </div>
       </div>
       <div class="left_catalog_pages">
-        <div class="jump_page"></div>
-        <button class="view_all">View all</button>
+        <div class="jump_page">
+          <a href="#" class="next_page">&#60;</a>
+          <a href="#" class="next_page next_page_red">1</a>
+          <a href="#" class="next_page">2</a>
+          <a href="#" class="next_page">3</a>
+          <a href="#" class="next_page">4</a>
+          <a href="#" class="next_page">5</a>
+          <a href="#" class="next_page">6</a>
+          <a href="#" class="next_page">...</a>
+          <a href="#" class="next_page">20</a>
+          <a href="#" class="next_page next_page_red">&#62;</a>
+        </div>
+        <button class="left_catalog_pages_view_all">View all</button>
       </div>
 
     </div>
   </section>
 
   <section class="service center">
-
+    <div class="service-block">
+      <img src="img/service_free_delivery.png" alt="free delivery">
+      <h5 class="head_service">Free Delivery</h5>
+      <p class="paragraph_service">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+    </div>
+    <div class="service-block">
+      <img src="img/service_sales_discount.png" alt="sales & discounts">
+      <h5 class="head_service">Sales & discounts</h5>
+      <p class="paragraph_service">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+    </div>
+    <div class="service-block">
+      <img src="img/service_quality_assurance.png" alt="quality assurance">
+      <h5 class="head_service">Quality assurance</h5>
+      <p class="paragraph_service">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+    </div>
   </section>
 
   <footer class="subscribe center">
