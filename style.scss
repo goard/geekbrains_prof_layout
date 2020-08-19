@@ -34,12 +34,44 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.header_left,
-.header_right {
-  display: flex;
-  align-items: center;
+  &_left,
+  &_right {
+    display: flex;
+    align-items: center;
+  }
+
+  &_form {
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+  }
+
+  &_browse {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 38px;
+    width: 87px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+    border-right-width: 0px;
+    background-color: #e6e6e6;
+    font-size: 14px;
+    font-weight: 300;
+    color: #222222;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    padding-right: 10px;
+
+    &:hover .drop {
+      display: flex;
+      top: 44px;
+      left: -1px;
+      z-index: 1;
+    }
+  }
 }
 
 .logo {
@@ -53,31 +85,6 @@ ul {
 .red_d {
   font-weight: 900;
   color: #f16d7f;
-}
-
-.header_form {
-  display: flex;
-  align-items: center;
-  margin-left: 37px;
-}
-
-.header_browse {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 38px;
-  width: 87px;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px 0px 0px 3px;
-  border-right-width: 0px;
-  background-color: #e6e6e6;
-  font-size: 14px;
-  font-weight: 300;
-  color: #222222;
-  text-align: right;
-  letter-spacing: 0.03em;
-  line-height: 32px;
-  padding-right: 9px;
 }
 
 #search {
@@ -135,21 +142,99 @@ ul {
   display: flex;
   justify-content: center;
 
+  &_list {
+    position: relative;
+
+    &:hover .drop {
+      display: flex;
+    }
+  }
+
+
+  &_link {
+    padding: 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 1);
+    line-height: 26px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ffffff;
+  }
+
+  &_link:active {
+    border-bottom: 3px solid #ef5b70;
+  }
 }
 
-.menu_link {
+.drop {
   padding: 20px;
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  color: rgba(34, 34, 34, 1);
-  line-height: 26px;
-  text-transform: uppercase;
-  border-bottom: 3px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 55px;
+  border: 1px solid #e8e8e8;
+  display: none;
+
+  &::after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 33px;
+    transform: rotate(45deg);
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+  }
+
+  &_last {
+    right: 0;
+
+    &::after {
+      left: auto;
+      right: 50px;
+    }
+  }
+
+  &_h3 {
+    font-size: 14px;
+    color: #232323;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 8px;
+  }
+
+  &_col {
+    width: 234px;
+
+    &:not(:last-child) {
+      margin-right: 46px;
+    }
+  }
+
+  &_link {
+    font-size: 14px;
+    color: #646464;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    &:hover {
+      color: #f16d7f;
+    }
+  }
+
+  &_marginTop {
+    margin-top: 13px;
+  }
 }
 
-.menu_link:hover {
-  border-bottom: 3px solid #ef5b70;
+.img_mega_menu {
+  margin-left: -21px;
+  margin-top: 15px;
 }
 
 .promo {
@@ -158,27 +243,27 @@ ul {
   background-image: url('img/promo.png');
   background-repeat: no-repeat;
   background-position: center -51px;
-}
 
-.promo_content {
-  margin-top: 224px;
-  float: left;
-  border-left: 12px solid  rgba(241, 109, 127, 1);
-  padding-left: 12px;
-}
+  &_content {
+    margin-top: 224px;
+    float: left;
+    border-left: 12px solid  rgba(241, 109, 127, 1);
+    padding-left: 12px;
+  }
 
-.promo_heading {
-  font-size: 40px;
-  font-weight: 900;
-  color: rgba(34, 34, 34, 1);
-  letter-spacing: 0.03em;
-  line-height: 33px;
-}
+  &_heading {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(34, 34, 34, 1);
+    letter-spacing: 0.03em;
+    line-height: 33px;
+  }
 
-.promo_heading_big {
-  font-size: 60px;
-  line-height: 46px;
-  margin-bottom: 12px;
+  &_heading_big {
+    font-size: 60px;
+    line-height: 46px;
+    margin-bottom: 12px;
+  }
 }
 
 .stocks {
