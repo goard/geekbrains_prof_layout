@@ -98,6 +98,20 @@ ul {
   z-index: 1;
 }
 
+.header_cart {
+  position: relative;
+}
+
+.header_cart:hover .drop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_link {
+  margin-right: 26px;
+}
+
 .logo {
   font-size: 27px;
   font-weight: 300;
@@ -125,10 +139,6 @@ ul {
   border-left-width: 0;
   background-color: #fff;
   border-radius: 0 3px 3px 0;
-}
-
-.header_cart {
-  margin-right: 26px;
 }
 
 .logo {
@@ -1159,6 +1169,11 @@ ul {
           align-items: center;
   background-color: #f7f7f7;
   border: 1px solid #eaeaea;
+  height: 777px;
+}
+
+.breadcrumbs_not_margin {
+  margin-bottom: 0;
 }
 
 .next_arrow {
@@ -1179,6 +1194,173 @@ ul {
   background-color: rgba(42, 42, 42, 0.15);
 }
 
+.buy_border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: -70px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.buy_head_1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f16d7f;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 73px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.buy_head_1_border {
+  margin-top: -2px;
+  width: 63px;
+  border-bottom: 3px solid #ef5b70;
+}
+
+.buy_head_2 {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #4d4d4d;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.buy_description {
+  font-size: 14px;
+  font-weight: 300;
+  color: #5e5e5e;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 64px;
+  padding-right: 258px;
+  padding-left: 258px;
+}
+
+.buy_property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 28px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #b9b9b9;
+  text-align: center;
+  line-height: 24px;
+}
+
+.buy_material {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b9b9b9;
+  text-align: center;
+  line-height: 24px;
+}
+
+.buy_margin_right {
+  margin-right: 44px;
+}
+
+.buy_dark {
+  color: #2f2f2f;
+}
+
+.buy_cost {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ef5b70;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 37px;
+}
+
+.buy_cost_border {
+  width: 642px;
+  margin: 0 auto;
+  margin-top: 42px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.buy_form_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 63px;
+}
+
+.buy_form_input_block:not(:last-child) {
+  margin-right: 53px;
+}
+
+.buy_form_input_head {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2f2f2f;
+  line-height: 24px;
+}
+
+.buy_input {
+  width: 144px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 13px;
+  color: #bcbcbc;
+  line-height: 24px;
+  padding-left: 15px;
+  margin-top: 12px;
+}
+
+.buy_color_show {
+  height: 12px;
+  width: 12px;
+  background-color: #ef5b70;
+}
+
+.buy_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 537px;
+  height: 55px;
+  border: 1px solid #ef5b70;
+  background-color: #fff;
+  margin-top: 28px;
+  margin-bottom: 122px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ef5b70;
+}
+
+.buy_img_cart {
+  margin-right: 15px;
+}
+
 .head_like {
   font-size: 24px;
   font-weight: 900;
@@ -1186,6 +1368,7 @@ ul {
   text-align: center;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 119px;
   margin-bottom: 72px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -72,6 +72,19 @@ ul {
       z-index: 1;
     }
   }
+
+  &_cart {
+    position: relative;
+
+    &:hover .drop {
+      display: flex;
+    }
+  }
+
+  &_link {
+    margin-right: 26px;
+  }
+
 }
 
 .logo {
@@ -103,9 +116,7 @@ ul {
   border-radius: 0 3px 3px 0;
 }
 
-.header_cart {
-  margin-right: 26px;
-}
+
 
 .logo {
   display: flex;
