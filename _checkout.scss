@@ -1,0 +1,124 @@
+.checkout {
+
+  &__action {
+    padding: 34px 0;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  &__head {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: flex-start;
+    padding: 35px;
+  }
+
+  &__left {
+    margin-right: 291px;
+  }
+
+  &__headform {
+    font-size: 13px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 13px;
+    color: #b3b2b2;
+    line-height: 20px;
+    margin-top: 15px;
+
+    &_bottom {
+      margin-bottom: 34px;
+    }
+
+    &_field {
+      font-size: 13px;
+      color: #ff0d0d;
+      line-height: 20px;
+      margin-top: 22px;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    align-items: center;
+
+    &_bottom {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__label {
+    font-size: 12px;
+    color: #222222;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    &_radio {
+      margin-left: 14px;
+    }
+
+    &_red {
+      font-size: 17px;
+      color: #ff0d0d;
+      line-height: 20px;
+    }
+  }
+
+  &__button {
+    height: 50px;
+    width: 180px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #f16d7f;
+      border: 1px solid #f16d7f;
+    }
+  }
+
+  &__input {
+    height: 45px;
+    width: 390px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    padding: 0 20px;
+    margin-top: 16px;
+
+    &:not(#password) {
+      margin-bottom: 26px;
+    }
+
+    &:hover {
+      border: 1px solid #f16d7f;
+    }
+  }
+
+  &__email {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__password {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+  }
+}

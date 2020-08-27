@@ -75,16 +75,137 @@ ul {
 
   &_cart {
     position: relative;
+    margin-right: 26px;
 
-    &:hover .drop {
+    &:hover .header__drop {
       display: flex;
     }
   }
 
   &_link {
-    margin-right: 26px;
+
   }
 
+}
+
+.header__drop {
+  padding: 20px 17px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 37px;
+  border: 1px solid #e8e8e8;
+  display: none;
+  left: -21px;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 33px;
+    transform: rotate(45deg);
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+  }
+
+  &__last {
+    right: 0;
+
+    &::after {
+      left: auto;
+      right: 50px;
+    }
+  }
+
+  &__row {
+    width: 230px;
+    display: flex;
+    padding-bottom: 16px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #ededed;
+    //justify-content: space-between;
+
+    &_mod {
+      margin-top: 19px;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #222222;
+      text-transform: uppercase;
+      border: none;
+      padding-bottom: none;
+    }
+  }
+
+  &__h3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &__col {
+    margin-left: 15px;
+  }
+
+  &__star{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #e4af48;
+  }
+
+  &__close {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #c0c0c0;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  &__price {
+    font-size: 12px;
+    color: #f16d7f;
+    text-transform: uppercase;
+  }
+
+  &__li {
+    height: 50px;
+    border: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+
+    &:hover {
+      border: 1px solid #f16d7f;
+    }
+    &:hover .header__drop__link {
+      color: #f16d7f;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-transform: uppercase;
+  }
+
+  &__marginTop {
+    margin-top: 13px;
+  }
 }
 
 .logo {
@@ -730,3 +851,5 @@ ul {
 
 @import 'man_catalog.scss';
 @import 'single_page.scss';
+@import 'checkout.scss';
+@import 'shoping-cart.scss'

@@ -1,0 +1,49 @@
+.cart {
+
+  &__table {
+    &_mod {
+      width: 1142px;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #222222;
+    letter-spacing: -0.01em;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    &_name {
+      font-weight: normal;
+    }
+
+    &_specific {
+      text-transform: none;
+      font-weight: normal;
+      color: #575757;
+      line-height: 20px;
+    }
+
+    &_attribute {
+      text-transform: none;
+      font-weight: 300;
+      color: #6f6e6e;
+      line-height: 20px;
+    }
+  }
+
+  &__row {
+    padding: 21px 21px;
+  }
+
+  &__column {
+    display: flex;
+  }
+
+  &__description {
+    //display: flex;
+  }
+
+
+}
