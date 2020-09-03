@@ -2,7 +2,8 @@
 
   &__table {
     &_mod {
-      width: 1142px;
+      min-width: 1142px;
+      border-collapse: collapse;
     }
   }
 
@@ -34,16 +35,47 @@
   }
 
   &__row {
-    padding: 21px 21px;
   }
 
   &__column {
     display: flex;
+    //border-bottom: 1px solid #eaeaea;
   }
 
   &__description {
     //display: flex;
   }
 
+  &__border {
+    padding: 10px 23px;
+    width: 57px;
+    border: 1px solid #eaeaea;
+  }
 
+  &__buttons {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;;
+  }
+
+  &__btn {
+    height: 50px;
+    width: 235px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-transform: uppercase;
+
+    &:hover {
+      border: 1px solid #f16d7f;
+    }
+  }
+
+}
+
+td {
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
 }
