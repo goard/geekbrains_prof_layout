@@ -25,6 +25,11 @@
   color: #636363;
   line-height: 20px;
   text-transform: uppercase;
+
+  &:hover {
+    color: #f16d7f;
+    font-weight: bold;
+  }
 }
 
 .breadcrumb_link:not(:last-child)::after {
